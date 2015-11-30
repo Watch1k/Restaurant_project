@@ -1,6 +1,19 @@
 // fonts
++font('Lobster1.4', 'Lobster1.4')
++font('MyriadPro Regular', 'MyriadPro-Regular')
++font('PinyonScript', 'PinyonScript')
++font('Roboto Light Italic', 'Roboto-LightItalic')
++font('Roboto Medium', 'Roboto-Medium')
++font('Roboto Regular', 'Roboto-Regular')
++font('Angelface', 'Angelface')
 $default-fonts: Arial, sans-serif
-
+$lobster: 'Lobster1.4', $default-fonts
+$myriad: 'MyriadPro Regular', $default-fonts
+$pscript: 'PinyonScript', $default-fonts
+$roboto-li: 'Roboto Light Italic', $default-fonts
+$roboto-m: 'Roboto Medium', $default-fonts
+$roboto: 'Roboto Regular', $default-fonts
+$angelface: 'Angelface', $default-fonts
 // colors
 
 
@@ -14,14 +27,155 @@ a
 svg
 	width: 100%
 	height: 100%
+.row
+	max-width: 1170px
+	margin-left: auto
+	margin-right: auto
+	+pie-clearfix
 body
 	min-width: 320px
-	font-family: $default-fonts
+	font-family: $roboto
 	font-size: 14px
 	line-height: 1.5
 .wrapper
 	overflow: hidden
-	min-height: 100%
-	// padding-bottom: 371px
 .footer
-	// margin-top: -371px
+header
+	position: relative
+	color: #fff
+	nav
+		position: relative
+		z-index: 1
+		top: 40px
+		font-family: $roboto-m
+		font-size: 14px
+		text-transform: uppercase
+		text-align: center
+		li
+			display: inline-block
+			a
+				display: block
+				padding: 5px 30px
+				border: 2px solid transparent
+				border-radius: 10px
+				text-decoration: none
+				transition: all 0.5s
+			&.is-active, &:hover
+				a
+					border-color: #fff
+					transition: all 0.5s
+			&:hover
+				a
+					background-color: rgba(255,255,255,.2)
+	.next-page
+		position: absolute
+		left: 50%
+		margin-left: -50px
+		bottom: 50px
+		width: 100px
+		height: 100px
+		background-color: transparent
+		.next-page__inner
+			display: inline-block
+			width: 100%
+			height: 100%
+			border: solid 3px #fff
+			border-radius: 10px
+			transform: rotate(45deg)
+			transition: all 0.5s
+		.icon-next
+			display: block
+			margin: 34px auto 0
+			transform: rotate(-45deg) scale(1.3)
+		&:hover
+			+bounce()
+			.next-page__inner
+				background-color: rgba(255,255,255,.2)
+				transition: all 0.5s
+.head-slider
+	position: absolute
+	left: 0
+	right: 0
+	top: 0
+	bottom: 0
+	.slick-list
+		height: 100%
+	.slick-track
+		height: 100%
+	.item-slider
+		background-size: cover
+		background-position: center center
+		&__in
+			position: relative
+			display: table
+			height: 100%
+			width: 100%
+		&__title
+			display: table-cell
+			text-align: center
+			vertical-align: middle
+			font-family: $angelface
+			font-size: 100px
+			line-height: 1
+			p
+				margin-top: -15px
+				font-family: $roboto
+				font-size: 12px
+				text-transform: uppercase
+				&:before, &:after
+					content: ''
+					display: inline-block
+					width: 70px
+					height: 1px
+					background-color: #fff
+					vertical-align: middle
+				&:before
+					margin-right: 45px
+				&:after
+					margin-left: 45px
+			.socials-list
+				margin-top: 50px
+				li
+					display: inline-block
+				.icon
+					display: block
+					border-radius: 50%
+					transition: all 0.4s
+					&:hover
+						background-color: #ff0000
+						transition: all 0.4s
+	.slick-dots
+		left: auto
+		right: 50px
+		top: 50%
+		li
+			display: block
+			+ li
+				margin-top: 13px
+			&.slick-active
+				button
+					opacity: 1
+		button
+			opacity: 0.3
+			width: 13px
+			height: 13px
+.section-title
+	margin-top: 120px
+	margin-bottom: 50px
+	font-family: $pscript
+	font-size: 90px
+	color: #A84A3E
+	text-align: center
+	&:after
+		content: ''
+		display: block
+		margin: -10px auto 0
+		width: 51px
+		height: 12px
+		background-image: url("../img/icons.png")
+		background-position: -72px 0px
+.section-info
+	font-family: $roboto-li
+	color: #818181
+	line-height: 24px
+	text-align: center

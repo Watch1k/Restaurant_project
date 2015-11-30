@@ -1,6 +1,12 @@
 $icons: (0:0)
-$icons: map-merge($icons,(bt-next: (X: 0px, Y:0px, W: 39px, H: 41px, TW: 82px, TH: 41px, IMG: '../img/icons.png')))
-$icons: map-merge($icons,(bt-prev: (X: -43px, Y:0px, W: 39px, H: 41px, TW: 82px, TH: 41px, IMG: '../img/icons.png')))
+$icons: map-merge($icons,(fb: (X: 0px, Y:-96px, W: 32px, H: 32px, TW: 259px, TH: 156px, IMG: '../img/icons.png')))
+$icons: map-merge($icons,(gplus: (X: -36px, Y:-96px, W: 32px, H: 32px, TW: 259px, TH: 156px, IMG: '../img/icons.png')))
+$icons: map-merge($icons,(next: (X: 0px, Y:-132px, W: 14px, H: 24px, TW: 259px, TH: 156px, IMG: '../img/icons.png')))
+$icons: map-merge($icons,(rest-1: (X: 0px, Y:0px, W: 92px, H: 92px, TW: 259px, TH: 156px, IMG: '../img/icons.png')))
+$icons: map-merge($icons,(rest-2: (X: -183px, Y:0px, W: 76px, H: 92px, TW: 259px, TH: 156px, IMG: '../img/icons.png')))
+$icons: map-merge($icons,(rest-3: (X: -96px, Y:0px, W: 83px, H: 89px, TW: 259px, TH: 156px, IMG: '../img/icons.png')))
+$icons: map-merge($icons,(title: (X: -108px, Y:-96px, W: 51px, H: 12px, TW: 259px, TH: 156px, IMG: '../img/icons.png')))
+$icons: map-merge($icons,(tweet: (X: -72px, Y:-96px, W: 32px, H: 32px, TW: 259px, TH: 156px, IMG: '../img/icons.png')))
 
 
 // Gets an attribute from the sass map
@@ -17,13 +23,43 @@ $icons: map-merge($icons,(bt-prev: (X: -43px, Y:0px, W: 39px, H: 41px, TW: 82px,
 @mixin s($i)
 	+sprite($i)
 
-.icon-bt-next
-	width: 39px
-	height: 41px
+.icon-fb
+	width: 32px
+	height: 32px
+	background-image: url('../img/icons.png')
+	background-position: 0px -96px
+.icon-gplus
+	width: 32px
+	height: 32px
+	background-image: url('../img/icons.png')
+	background-position: -36px -96px
+.icon-next
+	width: 14px
+	height: 24px
+	background-image: url('../img/icons.png')
+	background-position: 0px -132px
+.icon-rest-1
+	width: 92px
+	height: 92px
 	background-image: url('../img/icons.png')
 	background-position: 0px 0px
-.icon-bt-prev
-	width: 39px
-	height: 41px
+.icon-rest-2
+	width: 76px
+	height: 92px
 	background-image: url('../img/icons.png')
-	background-position: -43px 0px
+	background-position: -183px 0px
+.icon-rest-3
+	width: 83px
+	height: 89px
+	background-image: url('../img/icons.png')
+	background-position: -96px 0px
+.icon-title
+	width: 51px
+	height: 12px
+	background-image: url('../img/icons.png')
+	background-position: -108px -96px
+.icon-tweet
+	width: 32px
+	height: 32px
+	background-image: url('../img/icons.png')
+	background-position: -72px -96px

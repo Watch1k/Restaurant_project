@@ -1,0 +1,93 @@
+extends includes/layout
+block title
+	title Restaurant
+block content
+	// begin wrapper
+	#main.wrapper
+		// begin header
+		header
+			nav.row
+				ul.main-nav
+					li.is-active: a(href="#") Home
+					li: a(href="#") Restaurant
+					li: a(href="#") Menu
+					li: a(href="#") Reservation
+					li: a(href="#") Events
+					li: a(href="#") Contact
+			// begin head-slider
+			.head-slider
+				// begin item-slider
+				.item-slider
+					img(src='img/slider-1.jpg')
+					.item-slider__in
+						// begin item-slider__title
+						.item-slider__title
+							h2 Primavera
+							p Oriental restaurant
+							// begin socials-list
+							ul.socials-list
+								li
+									a(href='#'): i.icon.icon-fb
+								li
+									a(href='#'): i.icon.icon-tweet
+								li
+									a(href='#'): i.icon.icon-gplus
+							// end socials-list
+						// end item-slider__title
+				//end item-slider
+				// begin item-slider
+				.item-slider
+					img(src='img/slider-2.jpg')
+					.item-slider__in
+						// begin item-slider__title
+						.item-slider__title
+							h2 Primavera
+							p Oriental restaurant
+							// begin socials-list
+							ul.socials-list
+								li
+									a(href='#'): i.icon.icon-fb
+								li
+									a(href='#'): i.icon.icon-tweet
+								li
+									a(href='#'): i.icon.icon-gplus
+							// end socials-list
+						// end item-slider__title
+				//end item-slider
+			// end head-slider
+			button.next-page
+				.next-page__inner
+					i.icon-next
+		// end header
+
+		section.restaurant.row
+			h3.section-title restaurant
+			.section-info.
+				Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui.
+			// begin rest-list
+			ul.rest-list
+				li
+					a
+						i.icon-rest-1
+						.rest-list__info
+							p.
+								originally roasted coffee
+				li
+					a
+						i.icon-rest-2
+						.rest-list__info
+							p.
+								originally roasted coffee
+				li
+					a
+						i.icon-rest-3
+						.rest-list__info
+							p.
+								originally roasted coffee
+			// end rest-list
+
+	// end wrapper
+
+	// begin footer
+	.footer
+	// end footer

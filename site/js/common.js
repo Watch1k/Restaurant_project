@@ -1,4 +1,29 @@
-// head.ready(function(){
+head.ready(function(){
+	$('.head-slider .item-slider').each(function(){
+		$(this).css({
+			'background-image': 'url("'+$(this).children('img').attr('src')+'")'
+		})
+		.children('img').remove();
+	});
+
+	$('.head-slider').slick({
+		dots: true,
+		arrows: false,
+		autoplay: true,
+		autoplaySpeed: 7000
+	});
+
+	function headerHeight(){
+		$('header').css('height', $(window).innerHeight());
+	};
+	headerHeight();
+	$(window).resize(function(){
+		headerHeight();
+	});
+
+	$('.next-page').on('click', function(){
+		$(window).scrollTo($('section.restaurant'), 800);
+	});
 
 // // Clear placeholder
 // 	(function() {
@@ -56,4 +81,4 @@
 // 	}, false);
 	
 	
-// });
+});
