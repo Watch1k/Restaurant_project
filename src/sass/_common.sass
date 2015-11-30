@@ -70,10 +70,10 @@ header
 	.next-page
 		position: absolute
 		left: 50%
-		margin-left: -50px
+		margin-left: -25px
 		bottom: 50px
-		width: 100px
-		height: 100px
+		width: 50px
+		height: 50px
 		background-color: transparent
 		.next-page__inner
 			display: inline-block
@@ -85,8 +85,8 @@ header
 			transition: all 0.5s
 		.icon-next
 			display: block
-			margin: 34px auto 0
-			transform: rotate(-45deg) scale(1.3)
+			margin: 10px auto 0
+			transform: rotate(-45deg)
 		&:hover
 			+bounce()
 			.next-page__inner
@@ -115,7 +115,7 @@ header
 			text-align: center
 			vertical-align: middle
 			font-family: $angelface
-			font-size: 100px
+			font-size: 120px
 			line-height: 1
 			p
 				margin-top: -15px
@@ -161,21 +161,88 @@ header
 			height: 13px
 .section-title
 	margin-top: 120px
-	margin-bottom: 50px
 	font-family: $pscript
 	font-size: 90px
 	color: #A84A3E
+	line-height: 90px
 	text-align: center
-	&:after
-		content: ''
-		display: block
-		margin: -10px auto 0
-		width: 51px
-		height: 12px
-		background-image: url("../img/icons.png")
-		background-position: -72px 0px
+.section-title-icon
+	display: block
+	margin-bottom: 50px
 .section-info
 	font-family: $roboto-li
 	color: #818181
 	line-height: 24px
 	text-align: center
+.rest-list
+	margin-top: 100px
+	+pie-clearfix
+	li
+		float: left
+		width: 33.33%
+		text-align: center
+		a
+			display: block
+	&__inner
+		display: inline-block
+		width: 128px
+		height: 128px
+		line-height: 120px
+		border: 3px solid #262626
+		border-radius: 10px
+		cursor: pointer
+		transform: rotate(45deg)
+		transition: all 0.5s
+		.icon
+			position: relative
+			top: -4px
+			left: -4px
+			display: inline-block
+			vertical-align: middle
+			transform: rotate(-45deg)
+		&:hover
+			border-color: rgba(168, 74, 62, 0.95)
+			transition: all 0.5s
+			.rest-list__info
+				opacity: 1
+				transition: all 0.5s
+	&__info
+		position: absolute
+		display: table
+		width: 100%
+		height: 100%
+		top: 0
+		left: 0
+		right: 0
+		bottom: 0
+		line-height: 1.5
+		opacity: 0
+		transform: rotate(-45deg)
+		transition: all 0.5s
+		&:before
+			content: ''
+			display: block
+			position: absolute
+			z-index: -1
+			width: 100%
+			height: 100%
+			left: 0
+			top: 0
+			background-color: rgba(168, 74, 62, 0.95)
+			border-radius: 7px
+			transform: rotate(45deg)
+		p
+			display: table-cell
+			vertical-align: middle
+			color: #fff
+			text-transform: uppercase
+.rest-gallery
+	margin-left: -11px
+	margin-top: 100px
+	+pie-clearfix
+	&__item
+		float: left
+		margin-left: 11px
+		margin-bottom: 11px
+		img
+			vertical-align: bottom
