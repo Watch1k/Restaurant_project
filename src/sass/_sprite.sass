@@ -1,12 +1,17 @@
 $icons: (0:0)
-$icons: map-merge($icons,(fb: (X: 0px, Y:-96px, W: 32px, H: 32px, TW: 259px, TH: 156px, IMG: '../img/icons.png')))
-$icons: map-merge($icons,(gplus: (X: -36px, Y:-96px, W: 32px, H: 32px, TW: 259px, TH: 156px, IMG: '../img/icons.png')))
-$icons: map-merge($icons,(next: (X: 0px, Y:-132px, W: 14px, H: 24px, TW: 259px, TH: 156px, IMG: '../img/icons.png')))
-$icons: map-merge($icons,(rest-1: (X: 0px, Y:0px, W: 92px, H: 92px, TW: 259px, TH: 156px, IMG: '../img/icons.png')))
-$icons: map-merge($icons,(rest-2: (X: -183px, Y:0px, W: 76px, H: 92px, TW: 259px, TH: 156px, IMG: '../img/icons.png')))
-$icons: map-merge($icons,(rest-3: (X: -96px, Y:0px, W: 83px, H: 89px, TW: 259px, TH: 156px, IMG: '../img/icons.png')))
-$icons: map-merge($icons,(title: (X: -108px, Y:-96px, W: 51px, H: 12px, TW: 259px, TH: 156px, IMG: '../img/icons.png')))
-$icons: map-merge($icons,(tweet: (X: -72px, Y:-96px, W: 32px, H: 32px, TW: 259px, TH: 156px, IMG: '../img/icons.png')))
+$icons: map-merge($icons,("fb": (X: -195px, Y:-96px, W: 32px, H: 32px, TW: 259px, TH: 258px, IMG: '../img/icons.png')))
+$icons: map-merge($icons,("gplus": (X: -54px, Y:-142px, W: 32px, H: 32px, TW: 259px, TH: 258px, IMG: '../img/icons.png')))
+$icons: map-merge($icons,("menu-1:hover": (X: -67px, Y:-96px, W: 60px, H: 38px, TW: 259px, TH: 258px, IMG: '../img/icons.png')))
+$icons: map-merge($icons,("menu-1": (X: -131px, Y:-96px, W: 60px, H: 38px, TW: 259px, TH: 258px, IMG: '../img/icons.png')))
+$icons: map-merge($icons,("menu-2": (X: 0px, Y:-96px, W: 63px, H: 42px, TW: 259px, TH: 258px, IMG: '../img/icons.png')))
+$icons: map-merge($icons,("menu-3": (X: 0px, Y:-142px, W: 50px, H: 51px, TW: 259px, TH: 258px, IMG: '../img/icons.png')))
+$icons: map-merge($icons,("menu-4": (X: 0px, Y:-197px, W: 15px, H: 61px, TW: 259px, TH: 258px, IMG: '../img/icons.png')))
+$icons: map-merge($icons,("next": (X: -231px, Y:-96px, W: 14px, H: 24px, TW: 259px, TH: 258px, IMG: '../img/icons.png')))
+$icons: map-merge($icons,("rest-1": (X: 0px, Y:0px, W: 92px, H: 92px, TW: 259px, TH: 258px, IMG: '../img/icons.png')))
+$icons: map-merge($icons,("rest-2": (X: -183px, Y:0px, W: 76px, H: 92px, TW: 259px, TH: 258px, IMG: '../img/icons.png')))
+$icons: map-merge($icons,("rest-3": (X: -96px, Y:0px, W: 83px, H: 89px, TW: 259px, TH: 258px, IMG: '../img/icons.png')))
+$icons: map-merge($icons,("title": (X: -126px, Y:-142px, W: 51px, H: 12px, TW: 259px, TH: 258px, IMG: '../img/icons.png')))
+$icons: map-merge($icons,("tweet": (X: -90px, Y:-142px, W: 32px, H: 32px, TW: 259px, TH: 258px, IMG: '../img/icons.png')))
 
 
 // Gets an attribute from the sass map
@@ -27,17 +32,42 @@ $icons: map-merge($icons,(tweet: (X: -72px, Y:-96px, W: 32px, H: 32px, TW: 259px
 	width: 32px
 	height: 32px
 	background-image: url('../img/icons.png')
-	background-position: 0px -96px
+	background-position: -195px -96px
 .icon-gplus
 	width: 32px
 	height: 32px
 	background-image: url('../img/icons.png')
-	background-position: -36px -96px
+	background-position: -54px -142px
+.icon-menu-1:hover
+	width: 60px
+	height: 38px
+	background-image: url('../img/icons.png')
+	background-position: -67px -96px
+.icon-menu-1
+	width: 60px
+	height: 38px
+	background-image: url('../img/icons.png')
+	background-position: -131px -96px
+.icon-menu-2
+	width: 63px
+	height: 42px
+	background-image: url('../img/icons.png')
+	background-position: 0px -96px
+.icon-menu-3
+	width: 50px
+	height: 51px
+	background-image: url('../img/icons.png')
+	background-position: 0px -142px
+.icon-menu-4
+	width: 15px
+	height: 61px
+	background-image: url('../img/icons.png')
+	background-position: 0px -197px
 .icon-next
 	width: 14px
 	height: 24px
 	background-image: url('../img/icons.png')
-	background-position: 0px -132px
+	background-position: -231px -96px
 .icon-rest-1
 	width: 92px
 	height: 92px
@@ -57,9 +87,9 @@ $icons: map-merge($icons,(tweet: (X: -72px, Y:-96px, W: 32px, H: 32px, TW: 259px
 	width: 51px
 	height: 12px
 	background-image: url('../img/icons.png')
-	background-position: -108px -96px
+	background-position: -126px -142px
 .icon-tweet
 	width: 32px
 	height: 32px
 	background-image: url('../img/icons.png')
-	background-position: -72px -96px
+	background-position: -90px -142px

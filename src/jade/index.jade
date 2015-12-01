@@ -60,6 +60,7 @@ block content
 					i.icon-next
 		// end header
 
+		// begin section restaurant
 		section.restaurant.row
 			h3.section-title restaurant
 			center: .section-title-icon.icon-title
@@ -91,26 +92,121 @@ block content
 			// end rest-list
 
 			// begin rest-gallery
-			.rest-gallery
-				a(href='#').rest-gallery__item
-					img(src='img/photo-1.jpg')
-				a(href='#').rest-gallery__item
-					img(src='img/photo-2.jpg')
-				a(href='#').rest-gallery__item
-					img(src='img/photo-3.jpg')
-				a(href='#').rest-gallery__item
-					img(src='img/photo-4.jpg')
+			ul.rest-gallery
+				li
+					a(href='#').rest-gallery__item
+						img(src='img/photo-1.jpg')
+				li
+					a(href='#').rest-gallery__item
+						img(src='img/photo-2.jpg')
+				li
+					a(href='#').rest-gallery__item
+						img(src='img/photo-3.jpg')
+				li
+					a(href='#').rest-gallery__item
+						img(src='img/photo-4.jpg')
 			// end rest-gallery
+		// end section restaurant
 		
+		// begin section menu
 		section.menu.row
 			h3.section-title menu
 			center: .section-title-icon.icon-title
 			.section-info.
 				showcase your site visitors the best menu, specialty restaurants to attract your potential customers
+			// begin menu-list
 			ul.menu-list
-				li
+				li(data-category='.menu-1')
 					a
-
+						i.icon.icon-menu-1
+				li(data-category='.menu-2')
+					a
+						i.icon.icon-menu-2
+				li(data-category='.menu-3')
+					a
+						i.icon.icon-menu-3
+				li(data-category='.menu-4')
+					a
+						i.icon.icon-menu-4
+			// end menu-list
+			// begin menu-items
+			ul.menu-items
+				li.menu-1
+					a(href='#').menu-items__img
+						img(src="img/menu-item-1.jpg")
+					.menu-items__in
+						h3: a(href='#') Fresh salad simple
+						p tomatoes, cucumber, fresh lettuce, olives
+						.menu-items__price
+								span $29,99
+								span $25,99
+				li.menu-2
+					a(href='#').menu-items__img
+						img(src="img/menu-item-2.jpg")
+					.menu-items__in
+						h3: a(href='#') Fresh salad simple
+						p tomatoes, cucumber, fresh lettuce, olives
+						.menu-items__price
+								span $29,99
+								span $25,99
+				li.menu-3
+					a(href='#').menu-items__img
+						img(src="img/menu-item-3.jpg")
+					.menu-items__in
+						h3: a(href='#') Fresh salad simple
+						p tomatoes, cucumber, fresh lettuce, olives
+						.menu-items__price
+								span $29,99
+								span $25,99
+				li.menu-4
+					a(href='#').menu-items__img
+						img(src="img/menu-item-4.jpg")
+					.menu-items__in
+						h3: a(href='#') Fresh salad simple
+						p tomatoes, cucumber, fresh lettuce, olives
+						.menu-items__price
+								span $29,99
+								span $25,99
+				li.menu-1
+					a(href='#').menu-items__img
+						img(src="img/menu-item-1.jpg")
+					.menu-items__in
+						h3: a(href='#') Fresh salad simple
+						p tomatoes, cucumber, fresh lettuce, olives
+						.menu-items__price
+								span $29,99
+								span $25,99
+				li.menu-2
+					a(href='#').menu-items__img
+						img(src="img/menu-item-2.jpg")
+					.menu-items__in
+						h3: a(href='#') Fresh salad simple
+						p tomatoes, cucumber, fresh lettuce, olives
+						.menu-items__price
+								span $29,99
+								span $25,99
+				li.menu-3
+					a(href='#').menu-items__img
+						img(src="img/menu-item-3.jpg")
+					.menu-items__in
+						h3: a(href='#') Fresh salad simple
+						p tomatoes, cucumber, fresh lettuce, olives
+						.menu-items__price
+								span $29,99
+								span $25,99
+				li.menu-4
+					a(href='#').menu-items__img
+						img(src="img/menu-item-4.jpg")
+					.menu-items__in
+						h3: a(href='#') Fresh salad simple
+						p tomatoes, cucumber, fresh lettuce, olives
+						.menu-items__price
+								span $29,99
+								span $25,99
+			// end menu-items
+			center
+				button.btn-more see more
+		// end section menu
 	// end wrapper
 
 	// begin footer

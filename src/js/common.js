@@ -25,6 +25,29 @@ head.ready(function(){
 		$(window).scrollTo($('section.restaurant'), 800);
 	});
 
+	// isotope filter
+	$(window).on('load', function(){
+		if ($('.menu-items').length) {
+			$('.menu-items').isotope({
+				itemSelector: '.menu-items li',
+				layoutMode: 'fitRows',
+				transitionDuration: '0.8s',
+				sortBy: 'random'
+			});
+		}
+	});
+	var $selectValueFilter;
+	$(window).on('load', function(){
+		if ($('.menu-list').length) {
+			$('.menu-list li').on('click', function(){
+				$selectValueFilter = $(this).attr('data-category');
+				$('.menu-items').isotope({
+					filter: $selectValueFilter
+				});
+			});
+		}
+	});
+
 // // Clear placeholder
 // 	(function() {
 // 		$('input,textarea').focus(function(){

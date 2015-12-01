@@ -76,13 +76,17 @@ gulp.task('sprite', function() {
     var spriteData = gulp.src(src.img + '/icons/*.png')
     // .pipe(plumber({errorHandler: notify.onError("Error: <%= error.message %>")}))
     .pipe(spritesmith({
-        imgName: 'icons.png',
         cssName: '_sprite.sass',
-        imgPath: '../img/icons.png',
         cssFormat: 'sass',
+        imgName: 'icons.png',
+        imgPath: '../img/icons.png',
         padding: 4,
         // algorithm: 'top-down',
-        cssTemplate: src.helpers + '/sprite.template.mustache'
+        cssTemplate: src.helpers + '/sprite.template.mustache',
+        cssVarMap: function(sprite) {
+            sprite.name = sprite.name.replace('-hover', ':hover'),
+            sprite.name = sprite.name.replace('-active', ':active')
+        }
     }));
     spriteData.img
         .pipe(gulp.dest(dest.img));
